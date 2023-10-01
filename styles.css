@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Handjet', cursive;
     text-align: center;
     background-color: #f0f0f0;
     margin: 0;
@@ -7,23 +7,37 @@ body {
 }
 
 h1 {
-    background-color: #333;
+    background-color: #532a2a;
     color: white;
     padding: 10px;
 }
 
-#album-container {
-    margin: 20px;
-    padding: 20px;
+#albums-container {
+    display: flex; /* Usar un contenedor flexible */
+    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan a la siguiente fila si no caben */
+    justify-content: center; /* Centrar horizontalmente las imágenes */
+    margin: 100px;
+    padding: 100px;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
+.album-container {
+    
+}
+
 img {
+    display: inline-block; /* Mostrar las imágenes en línea */
+    margin-right: 50px; /* Agregar espacio entre las imágenes */
     max-width: 300px;
     height: auto;
     margin-top: 10px;
+}
+
+h2, p {
+    display: flexbox;
+    margin-right: 50px;
 }
 
 /* Estilos para las estrellas */
@@ -42,5 +56,7 @@ img {
 
 /* Estilos para el contenedor de puntuación */
 .rating-container {
-    display: inline-block; /* Para que las estrellas se muestren en línea */
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
 }
